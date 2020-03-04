@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B691C856-5E94-4A6B-8B48-1668D01B281A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cdp</RootNamespace>
+    <AssemblyName>Cdp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cronometro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cronometro.Designer.cs">
+      <DependentUpon>Cronometro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Cruds\Cruds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Cruds\Cruds.Designer.cs">
+      <DependentUpon>Cruds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAtleta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAtleta.Designer.cs">
+      <DependentUpon>frmAtleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfrontoscs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmConfrontoscs.Designer.cs">
+      <DependentUpon>frmConfrontoscs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEquipe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmEquipe.Designer.cs">
+      <DependentUpon>frmEquipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmEvento.Designer.cs">
+      <DependentUpon>frmEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControl1.Designer.cs">
+      <DependentUpon>MainControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlacarFight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlacarFight.Designer.cs">
+      <DependentUpon>PlacarFight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ranking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ranking.Designer.cs">
+      <DependentUpon>Ranking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style.cs" />
+    <EmbeddedResource Include="Cronometro.resx">
+      <DependentUpon>Cronometro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Cruds\Cruds.resx">
+      <DependentUpon>Cruds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAtleta.resx">
+      <DependentUpon>frmAtleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfrontoscs.resx">
+      <DependentUpon>frmConfrontoscs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEquipe.resx">
+      <DependentUpon>frmEquipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvento.resx">
+      <DependentUpon>frmEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControl1.resx">
+      <DependentUpon>MainControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlacarFight.resx">
+      <DependentUpon>PlacarFight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ranking.resx">
+      <DependentUpon>Ranking.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{e21f79ed-b845-4483-95af-394827944d97}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{3488E4F3-311E-4513-9456-318B324A8E25}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize-63-618164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-button-png-download-this-image-as-600.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-button-blue-hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_gloves.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_gloves2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_pic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_gloves21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_Main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_new_1-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_gloves1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mma-background-21-1170x695.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storyblocks-background-of-boxing-ring-illuminated-sports-area-for-fighting-dangerous-sport-empty-arena-with-spotlights-shining-lights-ropes-place-for-wrestling-presentation-of-match-co.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fighting-ring-background-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\148-1485366_flag-spot-icon-free-download-png-clipart-stick.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
